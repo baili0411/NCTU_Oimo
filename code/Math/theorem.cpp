@@ -77,6 +77,6 @@ Baby Step Giant Step
 Get a^x = b (mod n)
 x = im - j, m = ceil(sqrt(n))
 a^im = b*a^j(mod n)
-預處理 a^im, 0 <= i < m， 存hash/map
+預處理 a^im, 1 <= i <= m， 存hash/map
 接著去試從 0 <= j <= m有沒有a^im = b*a^j，有的話答案是 im-j。
 */
