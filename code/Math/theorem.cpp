@@ -79,5 +79,5 @@ x = im - j, m = ceil(sqrt(n))
 a^im = b*a^j(mod n)
 預處理 a^im, 1 <= i <= m， 存hash/map
 接著去試從 0 <= j <= m有沒有a^im = b*a^j，有的話答案是 im-j。
-可能需要特判 b =1? x= 0?
+可能需要特判 if b =1 then x= 0
 */
