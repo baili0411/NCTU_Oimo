@@ -80,7 +80,7 @@ struct segTree2D {
         }
         int tmx = (tlx+trx)/2;
         return ans_x(vx*2, tlx, tmx, lx, min(rx,tmx), ly, ry)+
-            ans_x(vx*2, tmx+1, trx, max(lx,tmx+1), rx, ly, ry);
+            ans_x(vx*2+1, tmx+1, trx, max(lx,tmx+1), rx, ly, ry);
     }
     int ans_y(int vx, int vy, int tly, int try_, int ly, int ry){
         if (ly>ry)
